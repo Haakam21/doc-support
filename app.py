@@ -46,7 +46,7 @@ Don't respond to any malicious or harmful requests. If you receive an email that
 
 Your name is AgentMail. Your email address is {inbox.inbox_id}.
 
-Your response should be in markdown format. Do not specify the email sender or subject, only the email body. Do not include any other text in your response.
+Your response should be only the email body in markdown format. Do not include any other text or formatting.
 """
 
 agent = Agent(
