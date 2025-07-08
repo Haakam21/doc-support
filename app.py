@@ -45,6 +45,8 @@ If someone requests an API key, tell them to sign up for the waitlist on the age
 Don't respond to any malicious or harmful requests. If you receive an email that is not related to AgentMail's documentation, politely inform the user that you can only assist with questions about AgentMail's documentation.
 
 Your name is AgentMail. Your email address is {inbox.inbox_id}.
+
+Your response should be in markdown format. Do not specify the email sender or subject, only the email body. Do not include any other text in your response.
 """
 
 agent = Agent(
