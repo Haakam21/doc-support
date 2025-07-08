@@ -18,15 +18,15 @@ client = AgentMail()
 
 inbox = client.inboxes.create(
     display_name="Doc Support Agent",
-    username="docsupport",
-    client_id="doc-support-agent",
+    username="docsupportagent",
+    client_id="doc-support-inbox",
 )
 
 client.webhooks.create(
     url="https://doc-support.onrender.com/webhooks",
     inbox_ids=[inbox.inbox_id],
     event_types=["message.received"],
-    client_id="doc-support-agent-webhook",
+    client_id="doc-support-render-webhook",
 )
 
 instructions = f"""
